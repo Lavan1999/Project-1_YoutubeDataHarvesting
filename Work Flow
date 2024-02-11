@@ -1,0 +1,74 @@
+# First I create a developer account with the organization that produces the API. I saved the Youtube API key.
+#  We want to know how youtube provides its data's via API and structure of getting data's Youtube API data documentation : Youtube API Data
+# Refered the Youtube API data completely, so that I got some idea to what are the datas I want to extract.
+#On clicking the LIST --> ( </> ) this icon on down menu you will be provided with basic syntax code for more languages as we 
+are in python phase on selecting PYTHON we can get basic code for a specific resource from youtube API.
+
+# Now I start working in VScode. I installed googleapiclient in command promt for this build connects 'youtube data and api key as one parameter'.
+
+pip install google-api-python-client
+from googleapiclient.discovery import build
+
+# 
+
+api_key = '**API KEY**'
+channel_id = 'UCiEmtpFVJjpvdhsQ2QAhxVA'  # example channel_ID
+
+# selected **channel** from resource menu
+api_service_name = "youtube"
+api_version = "v3"
+
+youtube = googleapiclient.discovery.build(api_service_name, api_version, developerKey = api_key)
+
+# Here I created list to store some datas only from the Youtube Channel. That datas in 'Part'. Id is Channel ID where we want to extract the datas.
+
+request = youtube.channels().list(
+        part="snippet,contentDetails,statistics",
+        id="UCRtAu8OVYVfuNZmTV-Ug0zA")
+response = request.execute()
+
+#Once it works out, then I Collect the datas from the Items, stored it as channel information
+
+Channel_Information = {
+'channel_name' : response['items'][0]['snippet']['title'],
+'channel_id': response['items'][0]['id'],
+'channel_type': response['items'][0]['kind'],
+'channel_description' : response['items'][0]['snippet']['description'],
+'playlists': response['items'][0]['contentDetails']['relatedPlaylists']['uploads'],
+'channel_views': response['items'][0]['statistics']['viewCount']}
+
+# Now all codes working without an error. So I used to these in for loop.
+
+for i in response['items']:
+    fieldData = dict(Channel_name = i['snippet']['title'],
+                     Channel_id = i['id'],
+                     Channel_Subscribers = i['statistics']['subscriberCount'],
+                     VideoCount = i['statistics']['videoCount'],
+                     viewsCount  = i['statistics']['viewCount'],
+                     Channel_description = i['snippet']['description'],
+                     playlist_id = i['contentDetails']['relatedPlaylists']['uploads'])
+# Now we need modify the codes as in FUNCTION for the multiple usage
+
+def channel_info(channel_id):
+    request = youtube.channels().list(
+            part="snippet,contentDetails,statistics",
+            id= channel_id
+            )
+    response = request.execute()
+
+    for i in response['items']:
+        fieldData = dict(Channel_name = i['snippet']['title'],
+                        Channel_id = i['id'],
+                        Channel_Subscribers = i['statistics']['subscriberCount'],
+                        VideoCount = i['statistics']['videoCount'],
+                        viewsCount  = i['statistics']['viewCount'],
+                        Channel_description = i['snippet']['description'],
+                        playlist_id = i['contentDetails']['relatedPlaylists']['uploads'])
+    return fieldData
+
+#We need to call the function.
+
+channel_details = channel_info("UCPk2s5c4R_d-EUUNvFFODoA")
+channel_details
+
+
