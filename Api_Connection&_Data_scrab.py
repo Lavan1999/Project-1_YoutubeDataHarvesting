@@ -118,7 +118,8 @@ def video_details(video_ids):
   
   
   
-#6  Collecting comment id-------------
+#6  Collecting comment id
+
 
 def comment_details(video_ids):
     comment_datas = []
