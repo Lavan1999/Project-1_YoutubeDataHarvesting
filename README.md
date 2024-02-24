@@ -2,6 +2,7 @@
 YouTube Data Harvesting and Warehousing using MongoDB, SQL and Streamlit
 
 **WORKFLOW**
+
 Data Collection:
 
   1.The first step is to collect data from the YouTube using the YouTube Data API. 
@@ -28,4 +29,8 @@ Data Analysis and Data Visualization:
   4.Also used Plotly for the Data Visualization to create charts and graphs to analyze the data.
 
 
-  ![Screenshot (122)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/33777738-530e-4f96-b599-d70a6248e401)
+**HOME PAGE**
+
+![Screenshot (122)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/fa13f92c-0ca5-442e-837d-a42cab0660d2)
+
+**DATA SCRAP**
