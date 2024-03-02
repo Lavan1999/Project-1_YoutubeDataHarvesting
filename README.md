@@ -34,3 +34,5 @@ Data Analysis and Data Visualization:
 ![Screenshot (122)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/fa13f92c-0ca5-442e-837d-a42cab0660d2)
 
 **DATA SCRAP**
+![Screenshot (149)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/6194d39a-2325-4340-b265-86d590c7534e)
+
