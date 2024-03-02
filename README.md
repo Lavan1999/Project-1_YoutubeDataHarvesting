@@ -11,14 +11,14 @@ Data Collection:
   3.I have used the Google API client library for Python to make requests to the API and the responses 
     are Collected as a Dictionary (Data Collection)
     
-Loading(Storing) the Collected Data to MongoDB:
+Inserting(Storing) the Collected Data to MongoDB:
 
   1.Once the Data Collection is done, store it in MongoDB, which is a NoSQL Database great choice for 
   handling unstructured and semi-structured data.
   
 Data Migration to SQL:
 
-  1.After Loading all the data into MongoDB, it is then migrated to a structured MySQL data warehouse.
+  1.After Loading all the data into MongoDB, it is then migrated to a structured postgres data warehouse.
   2.Then used SQL queries to join the tables and retrieve data for specific channels.
   
 Data Analysis and Data Visualization:
