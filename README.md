@@ -33,22 +33,20 @@ Data Analysis and Data Visualization:
 To scrap the YouTube channel details:
 
 
-![Screenshot (159)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/ddc4ffd6-0fa5-4260-8b2a-483af17dfca1)
+![Screenshot (159)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/b8a3abe9-15d2-4123-9101-1320c6035928)
 
-
-**SELECT CHANNEL TO CONVERT INTO TABLE**
-
-![Screenshot (160)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/c424e8d8-9052-43b0-b7f1-f075f67e7a98)
 
 
 **QUERY PAGE**
 
-![Screenshot (161)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/ba94d51e-417d-453b-83e0-c0cfa5afd76d)
+
+![Screenshot (161)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/45a88d25-116e-40e0-8352-6467f97b13c1)
 
 
 **WORKFLOW OF THE PROJECT**
 
-![Screenshot (162)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/89d0a7a9-f359-49d6-9a9c-0c2f09527c51)
+
+![Screenshot (162)](https://github.com/Lavan1999/YouTube-Project/assets/152668558/7d03a97c-07c2-4a1d-b3ce-38988459d72c)
 
 
 
