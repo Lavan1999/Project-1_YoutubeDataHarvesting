@@ -9,7 +9,7 @@ import psycopg2
 
 
 
-#1 Connecting youtube api------------
+#1 Connecting youtube api
 
 api_key = 'AIzaSyB2UG9mxzeVrqqI916PGYnCI8JLKrLnrxQ'
 api_service_name = "youtube"
@@ -20,7 +20,7 @@ youtube = build(api_service_name, api_version, developerKey = api_key)
 
 
 
-#2 Getting youtube channel details------------
+#2 Getting youtube channel details
 
 def channel_details(channel_id):
     request = youtube.channels().list(
@@ -37,7 +37,7 @@ def channel_details(channel_id):
     return channel_information
 
 
-#4 getting video ids and details---------------
+#4 getting video ids and details
 
 def video_ids(channel_id):
     video_ids = []
@@ -61,7 +61,7 @@ def video_ids(channel_id):
 
 
 
-#5 Getting video details------------
+#5 Getting video details
 
 def video_details(video_ids):
     video_datas = []
@@ -93,7 +93,7 @@ def video_details(video_ids):
   
   
   
-#6  Collecting comment id-------------
+#6  Collecting comment details
 
 def comment_details(video_ids):
     comment_datas = []
@@ -124,7 +124,7 @@ def comment_details(video_ids):
 
     
     
-#connecting mongodb (nosql) ----------------
+#connecting mongodb (nosql) 
 
 client = pymongo.MongoClient('mongodb+srv://lavanya:Lavan123@guvilavan.5pjwpvl.mongodb.net/?retryWrites=true&w=majority')
 db = client['youtubeproject']
@@ -268,7 +268,7 @@ def alltables(option):
 
 
 
-#Streamlit UI codes------------------
+#Streamlit UI codes
 
 import streamlit as st
 import time
