@@ -1,9 +1,8 @@
-# YouTube-Project
-YouTube Data Harvesting and Warehousing using MongoDB, SQL and Streamlit
+# YouTube Data Harvesting and Warehousing using MongoDB, SQL and Streamlit
+**LinkedIn Video Post: https://www.linkedin.com/feed/update/urn:li:activity:7175713995692072961/
+# WORKFLOW
 
-**WORKFLOW**
-
-Data Collection:
+# Data Collection:
 
   1.The first step is to collect data from the YouTube using the YouTube Data API. 
   2.The API and the Channel ID (Extracted from the Channel Page) is used to retrieve channel details, 
