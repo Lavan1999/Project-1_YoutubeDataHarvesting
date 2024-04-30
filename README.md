@@ -13,7 +13,7 @@
 Inserting(Storing) the Collected Data to MongoDB:
 
   1.Once the Data Collection is done, store it in MongoDB, which is a NoSQL Database great choice for 
-  handling unstructured and semi-structured data.
+  handling unstructured and semi structured data.
   
 Data Migration to SQL:
 
